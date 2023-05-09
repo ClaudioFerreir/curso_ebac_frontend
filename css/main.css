@@ -1,0 +1,133 @@
+/*reset das propriedades*/
+* {
+  box-sizing: border-box; /*encaixa todas as propriedades dentro da altura determinada para o elemento*/
+  margin: 0;
+  padding: 0;
+}
+
+/*estilização do body*/
+
+body > header { /*header filho do body e nao todos os headers dos articles*/
+  background-color: #2f3640;
+  padding: 16px 0;
+  color: #f5f6fa;
+}
+
+header .container {
+  display: flex; /*deixa os elementos na mesma linha*/
+  align-items: center; /*alinha os elementos no centro*/
+  justify-content: space-between; /*espaço entre os elementos*/
+}
+
+header li {
+  display: inline; /*deixa os elementos na mesma linha*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+header li a {
+  color: #f5f6fa;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.container {
+  width: 1366px; /*largura de um notebook padrao hd*/
+  margin: 0 auto; /*centraliza o container*/
+}
+
+.articles {
+  display:flex; /*deixa os elementos na mesma linha*/
+  flex-wrap: wrap; /*quebra a linha quando nao cabe mais elementos*/
+  justify-content: space-between; /*espaço entre os elementos*/
+}
+
+.articles article {
+  width: 30%;
+  display: flex;
+  flex-direction: column; /*alinha os elementos em coluna*/
+  justify-content: space-between; /*espaço entre os elementos*/
+}
+
+.articles article img {
+  height: 308px;
+  width: 100%;
+}
+
+
+section {
+  padding: 16px 0;
+}
+
+section h2, .articles article {
+  margin-bottom: 16px;
+}
+
+.articles article h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.articles article a {
+  background-color: blue;
+  color: #fff;
+  padding: 8px;
+  display: inline-block; /*para tirar a caracteristica nativa do inline de forma que sobrepoe o texto e assim nao haver sobreposição dos elementos*/
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+  width: 100px;
+  text-align: center;
+}
+
+.articles article a:hover {
+  text-decoration: underline;
+}
+.articles article p,
+.articles article a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+  font-size: 24px;
+}
+
+section h2 {
+  font-size: 32px;
+}
+
+#sports {
+  background-color: rgba(0, 255,0,0.1);
+}
+
+#sports .articles article a {
+  background-color: #009432;
+}
+
+#economy {
+  background-color: #f8f59f;
+}
+
+#economy .articles article a {
+  background-color: #ff9f1a;
+}
+
+#entertainment {
+  background-color: #aecfdf;
+}
+
+#entertainment .articles article a {
+  background-color: #14213d;
+}
+
+#technology {
+  background-color: #9f9fad;
+}
+
+#technology .articles article a {
+  background-color: #703D57;
+}
+
+.readmore {
+  text-align: right;
+}
