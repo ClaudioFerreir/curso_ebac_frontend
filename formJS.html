@@ -6,24 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maths for Kids</title>
   <!--custom css-->
-  <link rel="stylesheet" href="../css/formJS.css">
+  <link rel="stylesheet" href="css/formJS.css">
   <!--google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
   <!--custom js-->
-  <script src="../js/formJS.js" defer></script>
+  <script src="js/mainFormJS.js" defer></script>
 </head>
 <body>
   <div class="container">
     <h1>Maths for kids</h1>
-    <h2>The first number has to be <span>bigger</span> than the second number</h2>
-    <form>
-      <input type="number" id="first-number">
-      <p>></p>
-      <input type="number" id="second-number">
+    <h2>The number B has to be <span>greater</span> than the number A</h2>
+    <form id="form">
+      <input type="number" id="number-A" placeholder="Write the number A">
+      <p> < </p>
+      <input type="number" id="number-B" placeholder="Write the number B">
       <button type="submit">Compare</button>
     </form>
+    <p class="result"></p>
   </div>
 </body>
 </html>

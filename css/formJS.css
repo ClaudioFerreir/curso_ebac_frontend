@@ -31,11 +31,15 @@ form {
   align-items: center;
 }
 
+form p {
+  padding: 8px;
+}
+
 input {
   display: block;
   padding: 8px;
-  margin: 8px;
   width: 50%;
+  margin-bottom: 8px;
 }
 
 button {
@@ -49,8 +53,29 @@ button {
   font-size: 18px;
   font-style: italic;
   cursor: pointer;
+  margin-bottom: 8px;
+  margin-left: 8px;
 }
 
 button:hover {
   background-color: #27ae60;
+}
+
+.success-message {
+  background-color: #2ecc71;
+  color: #fff; 
+  padding: 8px;
+  margin: 8px 0;
+  font-weight: bold;
+  text-align: center;
+  /*display: none;*/
+}
+
+.error-message {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  /*display: none;*/
 }
