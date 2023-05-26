@@ -10,10 +10,8 @@ form.addEventListener('submit', function(e) {
   const containerResult = document.querySelector('.result');
   const successMessage = `<i>AMAZING! YOU'RE RIGHT!!! The number <b>${numberB.value}</b> is greater than <b>${numberA.value}</b></i>`;
   const errorMessage = `<i>OPS! TRY AGAIN!!! The number <b>${numberB.value}</b> is <b>NOT</b> greater than <b>${numberA.value}</b></i>`;
-
-  console.log(numberA.value < numberB.value);
   
-  if (numberA.value < numberB.value) {
+  if (parseInt(numberA.value) < parseInt(numberB.value)) {
     containerResult.classList.remove('error-message');
     containerResult.innerHTML = successMessage;
     containerResult.style.display = 'block';
