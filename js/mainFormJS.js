@@ -29,12 +29,11 @@ numberB.addEventListener('keyup', function(e) {
   console.log(e.target.value);
   console.log(parseInt(numberA.value));
   console.log(parseInt(e.target.value));
-  numberB.removeAttribute('autofocus');
   if (parseInt(numberA.value) < parseInt(e.target.value)) {
     console.log('success');
-    numberB.style.border = '3px solid green';
+    numberB.style.border = '4px solid green';
   } else {
     console.log('fail');
-    numberB.style.border = '3px solid red';
+    numberB.style.border = '4px solid red';
   };
 });
