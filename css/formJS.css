@@ -77,9 +77,12 @@ button:hover {
   padding: 8px;
   font-weight: bold;
   text-align: center;
-  /*display: none;*/
 }
 
-/*#number-B:focus {
-  outline-color: #00000000;
-}*/
+.success-focus {
+  outline-color: #2ecc71;
+}
+
+.fail-focus {
+  outline-color: #e74c3c;
+}

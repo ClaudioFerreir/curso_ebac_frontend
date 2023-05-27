@@ -30,10 +30,11 @@ numberB.addEventListener('keyup', function(e) {
   console.log(parseInt(numberA.value));
   console.log(parseInt(e.target.value));
   if (parseInt(numberA.value) < parseInt(e.target.value)) {
-    console.log('success');
-    numberB.style.border = '4px solid green';
+    numberB.classList.remove('fail-focus');
+    numberB.classList.add('success-focus');
   } else {
-    console.log('fail');
-    numberB.style.border = '4px solid red';
+    numberB.classList.remove('sucess-focus');
+    numberB.classList.add('fail-focus');
   };
+
 });
