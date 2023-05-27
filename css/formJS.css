@@ -61,22 +61,21 @@ button:hover {
   background-color: #27ae60;
 }
 
-.success-message {
-  background-color: #2ecc71;
+.success-message, 
+.error-message {
   color: #fff; 
   padding: 8px;
   margin: 8px 0;
   font-weight: bold;
   text-align: center;
-  /*display: none;*/
+}
+
+.success-message {
+  background-color: #2ecc71;
 }
 
 .error-message {
   background-color: #e74c3c;
-  color: #fff;
-  padding: 8px;
-  font-weight: bold;
-  text-align: center;
 }
 
 .success-focus {
