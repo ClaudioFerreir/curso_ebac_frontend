@@ -16,7 +16,6 @@ form.addEventListener('submit', function(e) {
     containerResult.innerHTML = successMessage;
     containerResult.style.display = 'block';
     containerResult.classList.add('success-message');  
-
   } else {
     numberB.style.border = '1px solid red';
     containerResult.classList.remove('success-message');
@@ -36,5 +35,5 @@ numberB.addEventListener('keyup', function(e) {
   } else {
     console.log('fail');
     numberB.style.border = '3px solid red';
-  }
-})
+  };
+});
