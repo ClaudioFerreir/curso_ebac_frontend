@@ -26,9 +26,6 @@ form.addEventListener('submit', function(e) {
 });
 
 numberB.addEventListener('keyup', function(e) {
-  console.log(e.target.value);
-  console.log(parseInt(numberA.value));
-  console.log(parseInt(e.target.value));
   if (parseInt(numberA.value) < parseInt(e.target.value)) {
     numberB.classList.remove('fail-focus');
     numberB.classList.add('success-focus');
