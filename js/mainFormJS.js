@@ -16,18 +16,24 @@ form.addEventListener('submit', function(e) {
     containerResult.innerHTML = successMessage;
     containerResult.style.display = 'block';
     containerResult.classList.add('success-message');  
-
-    numberA.value = '';
-    numberB.value = '';
   } else {
     numberB.style.border = '1px solid red';
     containerResult.classList.remove('success-message');
     containerResult.innerHTML = errorMessage;
     containerResult.style.display = 'block';
     containerResult.classList.add('error-message');
-
-    numberA.value = '';
-    numberB.value = '';
   };
+});
 
+numberB.addEventListener('keyup', function(e) {
+  console.log(e.target.value);
+  console.log(parseInt(numberA.value));
+  console.log(parseInt(e.target.value));
+  if (parseInt(numberA.value) < parseInt(e.target.value)) {
+    console.log('success');
+    numberB.style.border = '3px solid green';
+  } else {
+    console.log('fail');
+    numberB.style.border = '3px solid red';
+  };
 });
