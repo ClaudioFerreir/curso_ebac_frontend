@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple To Do List</title>
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="./main.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="./images/icons8-to-do-50.png" alt="list with hearth" class="logo">
+    <h1>Simple To Do List</h1>
+  </header>
+  <div class="container">
+    <form id="add-task">
+      <input type="text" id="name-task" required placeholder="type a new task">
+      <label>Priority:</label>
+      <input type="radio" name="priority" value="red" id="high-priority">
+      <label for="high-priority" class="label-priority">High</label>
+      <input type="radio" name="priority" value="yellow" id="medium-priority">
+      <label for="medium-priority" class="label-priority">Medium</label>
+      <input type="radio" name="priority" value="green" id="low-priority">
+      <label for="low-priority" class="label-priority">Low</label>
+    </form>
+  </div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
