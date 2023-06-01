@@ -22,13 +22,40 @@
     <form id="add-task">
       <input type="text" id="name-task" required placeholder="type a new task">
       <label>Priority:</label>
-      <input type="radio" name="priority" value="red" id="high-priority">
-      <label for="high-priority" class="label-priority">High</label>
-      <input type="radio" name="priority" value="yellow" id="medium-priority">
-      <label for="medium-priority" class="label-priority">Medium</label>
-      <input type="radio" name="priority" value="green" id="low-priority">
-      <label for="low-priority" class="label-priority">Low</label>
+      <select>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+      <button type="submit">Add Task +</button>
     </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Tasks</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wake up early</td>
+          <td>medium-priority</td>
+        </tr>
+        <tr>
+          <td>JAVA lessons</td>
+          <td>high-priority</td>
+        </tr>
+        <tr>
+          <td>Ruby lessons</td>
+          <td>high-priority</td>
+        </tr>
+      </tbody>
+      <tfoot> 
+        <tr>
+          <td colspan="2">Total de 3 atividade(s)</td>
+        </tr>
+      </tfoot>
+    </table>
   </div>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="./main.js"></script>
