@@ -11,20 +11,27 @@ $(document).ready(function() {
 
   $('form').on('submit', function(e) {
     e.preventDefault();
-    AddTask();
+    addTask();
+    doneTask();
   })
 
-  function AddTask() {
+  function addTask() {
     const newTask = $('#new-task').val();
     const newPriority = $('#new-priority').val();
     const addTask = $(`<li style="display: none" class=${newPriority}></li>`);
     $(addTask).append(`<p class="task">${newTask}</p>`);
     $(addTask).append(`<p class="priority">${newPriority}</p>`);
     $('ul').append(addTask);
-    $(addTask).fadeIn(1000);
+    $(addTask).fadeIn(200);
 
     $('#new-task').val('');
     $('#new-priority').val('');
   }
+
+  function doneTask() {
+    $('#data-list li').click(function() {
+      $(this).addClass('done');
+    });
+  };
 });
 
