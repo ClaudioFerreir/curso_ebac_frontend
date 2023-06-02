@@ -18,45 +18,42 @@
     <h1>Simple To Do List</h1>
     <button>Add a New Task +</button>
   </header>
+  <form id="add-task">
+    <input type="text" id="new-task" required placeholder="type a new task">
+    <select id="new-priority" required>
+      <option value="" disabled selected>Priority</option>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button type="submit">confirm</button>
+    <button type="reset" id="cancel">cancel</button>
+  </form>
   <div class="container">
-    <form id="add-task">
-      <input type="text" id="name-task" required placeholder="type a new task">
-      <select id="priority" required>
-        <option value="" disabled selected>Priority</option>
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
-      </select>
-      <button type="submit">confirm</button>
-      <button type="reset" id="cancel">cancel</button>
-    </form>
-    <table>
-      <thead>
-        <tr>
-          <th>Tasks</th>
-          <th>Priority</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Wake up early</td>
-          <td>medium</td>
-        </tr>
-        <tr>
-          <td>JAVA lessons</td>
-          <td>high</td>
-        </tr>
-        <tr>
-          <td>Ruby lessons</td>
-          <td>high</td>
-        </tr>
-      </tbody>
-      <tfoot> 
-        <tr>
-          <td colspan="2" id="total">Total de 3 atividade(s)</td>
-        </tr>
-      </tfoot>
-    </table>
+    <div id="notebook">
+      <div id="label-list">
+        <p>Task</p>
+        <p>Priority</p>
+      </div >
+      <ul>
+        <li>
+          <p class="task">Acordar cedo</p>
+          <p class="priority">low</p>
+        </li>
+        <li>
+          <p class="task">Estudar na EBAC</p>
+          <p class="priority">high</p>
+        </li>
+        <li>
+          <p class="task">Ir a academia</p>
+          <p class="priority">low</p>
+        </li>
+        <li>
+          <p class="task">Estudar na Facu</p>
+          <p class="priority">high</p>
+        </li>
+      </ul>
+    </div>
   </div>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="./main.js"></script>
