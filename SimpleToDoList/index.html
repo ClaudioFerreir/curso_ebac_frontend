@@ -15,21 +15,20 @@
 </head>
 <body>
   <header>
-    <img src="./images/icons8-to-do-50.png" alt="list with hearth" class="logo">
     <h1>Simple To Do List</h1>
     <button>Add a New Task +</button>
   </header>
   <div class="container">
     <form id="add-task">
       <input type="text" id="name-task" required placeholder="type a new task">
-      <label>Priority:</label>
-      <select>
-        <option>Low</option>
-        <option>Medium</option>
-        <option>High</option>
+      <select id="priority" required>
+        <option value="" disabled selected>Priority</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
       </select>
       <button type="submit">confirm</button>
-      <button type="reset">reset</button>
+      <button type="reset" id="cancel">cancel</button>
     </form>
     <table>
       <thead>
@@ -54,7 +53,7 @@
       </tbody>
       <tfoot> 
         <tr>
-          <td colspan="2">Total de 3 atividade(s)</td>
+          <td colspan="2" id="total">Total de 3 atividade(s)</td>
         </tr>
       </tfoot>
     </table>
