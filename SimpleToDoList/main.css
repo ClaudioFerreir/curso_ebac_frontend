@@ -32,6 +32,7 @@ button,
   padding: 8px;
   border-radius: 5px;
   border: none;
+  margin-right: 8px;
 }
 
 button {
@@ -95,5 +96,16 @@ li {
   margin: 10px 0;
 }
 
+/*priorities*/
+.low {
+  color: #009432;
+}
 
+.medium {
+  color: #ffdd59;
+}
+
+.high {
+  color: #ff4757;
+}
 
