@@ -8,4 +8,11 @@ $(document).ready(function() {
   $('#cancel').click(function() {
     $('form').slideUp();
   })
+
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+    const newTask = $('#new-task').val();
+    const newPriority = $('#new-priority').val();
+    console.log(newTask, newPriority);
+  })
 });
