@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header,
+form,
+#label-list {
   font-family: 'roboto', sans-serif;
 }
 
@@ -46,6 +51,14 @@ button:hover {
   background-color: #01a538;
 }
 
+/*body*/
+body {
+  background-image: url("./images/backgroundPaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 /*form*/
 
 form {
@@ -65,15 +78,15 @@ form {
 
 /*container*/
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, .4);
 }
 
 /*notebook*/
 #notebook {
   width: 80%;
-  margin: 50px auto;
+  margin: 20px auto;
+  padding: 40px 0;
 }
 
 #label-list {
@@ -91,6 +104,9 @@ ul {
 }
 
 li {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
@@ -107,7 +123,7 @@ li {
 }
 
 .high {
-  color: #ff4757;
+  color: #ff0000;
 }
 
 /*actions*/
