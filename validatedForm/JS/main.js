@@ -21,21 +21,25 @@ $(document).ready(function() {
       cpf: {
         required: true,
       },
+      address: {
+        required: true,
+      },
       cep: {
         required: true,
       }
     },
     messages: {
-      name: 'Please enter your name',
-      email: 'Please enter your email',
-      phone: 'Please enter your phone',
-      cpf: 'Please enter your cpf',
-      cep: 'Please enter your cep'
+      name: 'Por favor, digite seu nome',
+      email: 'Por favor, digite seu email',
+      phone: 'Por favor, digite seu telefone',
+      cpf: 'Por favor, digite seu cpf',
+      address: 'Por favor, digite seu endereço',
+      cep: 'Por favor, digite seu cep',
     },
     invalidHandler: function(event, validator) {
       let errors = validator.numberOfInvalids();
       if(errors) {
-        alert(`You have ${errors} errors! Please check the form.`);
+        alert(`Você tem ${errors} erro(s) no seu formulário`);
       }
     }
   });
